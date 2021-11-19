@@ -16,11 +16,12 @@ const ProjectLoad = ({currentProjectId}) => {
     return(
         <Container id="loaded-project">
             <Card className="text-center border-green">
-                <Card.Img src={`./assets/images/${currentProject.thumbnail}`} alt="Preview failed to load"/>
-                <Card.Title>{currentProject.title}</Card.Title>
+                {currentProject.thumbnail && <Card.Img src={`./assets/images/${currentProject.thumbnail}`} alt="Preview failed to load"/>}
+                <Card.Title className="mt-2">{currentProject.title}</Card.Title>
+                {currentProject.description && <Card.Body className="pt-1">{currentProject.description}</Card.Body>}
                 <Card.Footer>
-                    <Button className="mx-1" variant={"success"} href={currentProject.repoURL}>Repo</Button>
-                    <Button className="mx-1" variant={"success"} href={currentProject.projectURL}>Deployed Project</Button>
+                    {currentProject.repoURL && <Button className="mx-1" variant={"success"} href={currentProject.repoURL}>Repo</Button>}
+                    {currentProject.projectURL && <Button className="mx-1" variant={"success"} href={currentProject.projectURL}>Deployed Project</Button>}
                 </Card.Footer>
             </Card>
         </Container>

@@ -21,6 +21,7 @@ export const QUERY_PROJECT_ID = gql`
             repoURL
             projectURL
             thumbnail
+            description
         }
     }
 `;
