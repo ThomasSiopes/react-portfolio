@@ -8,6 +8,7 @@ export const QUERY_PROJECT_ALL = gql`
             repoURL
             projectURL
             thumbnail
+            description
         }
     }
 `;

@@ -7,6 +7,7 @@ const typeDefs = gql`
         repoURL: String
         projectURL: String
         thumbnail: String
+        description: String
     }
 
     type Query {

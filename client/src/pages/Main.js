@@ -1,18 +1,44 @@
-import React from "react";
+import React, { useState } from "react";
 import { useQuery } from "@apollo/client";
+import { Container, Button, Col, Row } from "react-bootstrap";
+
+import ProjectLoad from "../components/ProjectLoad";
 
 import { QUERY_PROJECT_ALL } from "../utils/queries";
 
-function Home () {
-    let {loading, data} = useQuery(QUERY_PROJECT_ALL);
+function Home() {
+    const projects = useQuery(QUERY_PROJECT_ALL);
 
-    if(loading) return <p>Loading</p>
+    const [currentTab, setTab] = useState({
+        tabID: 0,
+    });
 
-    console.log(data);
-    console.log(data.projects)
+    const changeTab = (event) => {
+        event.preventDefault();
+        setTab({...currentTab, tabID: event.target.getAttribute("name")});
+    }
+
+    if(projects.loading) return <p>Loading...</p>
 
     return(
-        <div>Hello</div>
+        <Container>
+            <Row>
+                <Col xs={3} className="bg-green border-green me-2">
+                    <ul className="noDecor mt-2 px-2">
+                        {projects.data.projects.map((index) => (
+                            <li className="text-center mb-2" key={index._id}>
+                                <Button variant={"success"} className="btn-block" name={index._id} onClick={changeTab}>
+                                    {index.title}
+                                </Button>
+                            </li>
+                        ))}
+                    </ul>
+                </Col>
+                <Col className="p-0">
+                    <ProjectLoad currentProjectId={currentTab.tabID}/>
+                </Col>
+            </Row>
+        </Container>
     )
 }
 
