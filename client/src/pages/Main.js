@@ -23,7 +23,7 @@ function Home() {
     return(
         <Container>
             <Row>
-                <Col xs={3} className="me-2">
+                <Col xs={12} md={4} lg={3} className="me-2">
                     <div className="bg-green border-green p-2">
                         <ul className="noDecor mt-2 px-2">
                             {projects.data.projects.map((index) => (
