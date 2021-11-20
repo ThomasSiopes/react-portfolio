@@ -9,7 +9,7 @@ const ProjectLoad = ({currentProjectId}) => {
     })
 
     if(loading) return <p>Loading...</p>
-    else if(!loading && !data) return <p>Project Not Found...</p>
+    else if(!loading && !data) return <p></p>
 
     const currentProject = data.projectID;
 
