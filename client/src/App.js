@@ -11,9 +11,10 @@ import styled, { ThemeProvider } from "styled-components";
 import { lightTheme, darkTheme, GlobalStyles } from "./themes";
 
 // Components
+import NavBar from "./components/NavBar";
 
 // Pages
-import Home from "./pages/Main";
+import Main from "./pages/Main";
 
 const httpLink = createHttpLink({
   uri: "/graphql",
@@ -39,10 +40,6 @@ const StyledApp = styled.div``;
 function App() {  
   const [theme, setTheme] = useState("light");
 
-  // const themeToggler = () => {
-  //   theme === "light" ? setTheme("dark") : setTheme("light");
-  // }
-
   const themeDark = () => {
     setTheme("dark");
   }
@@ -55,14 +52,15 @@ function App() {
     <ApolloProvider client={client}>
       <Router>
         <ThemeProvider theme={theme === "light" ? lightTheme : darkTheme }>
-          <div className="mt-1">
+          <GlobalStyles/>
+          <NavBar/>
+          <div className="mb-3 me-2 text-end">
             <Button className="btn-success themeL mx-1" onClick={() => themeLight()}><FaSun/></Button>
             <Button className="btn-success themeD mx-1" onClick={() => themeDark()}><FaMoon/></Button>
           </div>
-          <GlobalStyles/>
           <StyledApp className="mainBody">
-            <Route exact path="/">
-              <Home/>
+            <Route exact path="/projects">
+              <Main/>
             </Route>
           </StyledApp>
         </ThemeProvider>

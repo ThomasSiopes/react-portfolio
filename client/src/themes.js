@@ -4,7 +4,7 @@ export const lightTheme = {
     body: "#fff",
     fontColor: "#000",
     displayL: "none",
-    displayD: "block",
+    displayD: "inline",
     greenBodyColor: "#fff",
     greenBodyBorder: "solid 1px #198754",
     projectLink: "solid 1.5px #198754"
@@ -13,7 +13,7 @@ export const lightTheme = {
 export const darkTheme = {
     body: "#222",
     fontColor: "#fff",
-    displayL: "block",
+    displayL: "inline",
     displayD: "none",
     greenBodyColor: "#198754",
     greenBodyBorder: "none",
@@ -53,6 +53,10 @@ export const GlobalStyles = createGlobalStyle`
     #loaded-project {
         min-width: 100%;
         padding: 0;
+    }
+
+    .mainBody {
+        min-height: 80vh;
     }
 
     .noDecor {

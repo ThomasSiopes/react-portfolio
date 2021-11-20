@@ -23,16 +23,18 @@ function Home() {
     return(
         <Container>
             <Row>
-                <Col xs={3} className="bg-green border-green me-2">
-                    <ul className="noDecor mt-2 px-2">
-                        {projects.data.projects.map((index) => (
-                            <li className="text-center mb-2" key={index._id}>
-                                <Button variant={"success"} className="btn-block" name={index._id} onClick={changeTab}>
-                                    {index.title}
-                                </Button>
-                            </li>
-                        ))}
-                    </ul>
+                <Col xs={3} className="me-2">
+                    <div className="bg-green border-green p-2">
+                        <ul className="noDecor mt-2 px-2">
+                            {projects.data.projects.map((index) => (
+                                <li className="text-center mb-2" key={index._id}>
+                                    <Button variant={"success"} className="btn-block" name={index._id} onClick={changeTab}>
+                                        {index.title}
+                                    </Button>
+                                </li>
+                            ))}
+                        </ul>
+                    </div>
                 </Col>
                 <Col className="p-0">
                     <ProjectLoad currentProjectId={currentTab.tabID}/>
