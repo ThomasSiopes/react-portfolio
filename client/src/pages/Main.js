@@ -37,7 +37,9 @@ function Home() {
                     </div>
                 </Col>
                 <Col className="p-0">
-                    <ProjectLoad currentProjectId={currentTab.tabID}/>
+                    <Container className="mb-3">
+                        <ProjectLoad currentProjectId={currentTab.tabID}/>
+                    </Container>
                 </Col>
             </Row>
         </Container>

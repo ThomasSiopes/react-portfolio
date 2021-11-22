@@ -1,20 +1,22 @@
 import React, { useState } from "react";
 import { ApolloClient, InMemoryCache, ApolloProvider, createHttpLink } from "@apollo/client";
 import { setContext } from "@apollo/client/link/context";
+import { Link, Redirect } from "react-router-dom";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 
 // Styles
 import 'bootstrap/dist/css/bootstrap.min.css';
-import { Container, Button } from "react-bootstrap";
+import { Container, Button, Navbar, Nav } from "react-bootstrap";
 import { FaMoon, FaSun } from "react-icons/fa";
 import styled, { ThemeProvider } from "styled-components";
 import { lightTheme, darkTheme, GlobalStyles } from "./themes";
 
 // Components
-import NavBar from "./components/NavBar";
 
 // Pages
 import Main from "./pages/Main";
+import Intro from "./pages/Intro";
+import AboutMe from "./pages/AboutMe";
 
 const httpLink = createHttpLink({
   uri: "/graphql",
@@ -53,14 +55,33 @@ function App() {
       <Router>
         <ThemeProvider theme={theme === "light" ? lightTheme : darkTheme }>
           <GlobalStyles/>
-          <NavBar/>
-          <div className="mb-3 me-2 text-end">
-            <Button className="btn-success themeL mx-1" onClick={() => themeLight()}><FaSun/></Button>
-            <Button className="btn-success themeD mx-1" onClick={() => themeDark()}><FaMoon/></Button>
+          <div>
+            <Navbar bg="none" variant="dark" className="mb-3">
+              <Container>
+                <Nav className="ms-auto">
+                    <Link className="nav-link mx-2" to={`/intro`}>Introduction</Link>
+                    <Link className="nav-link mx-2" to={`/projects`}>Projects</Link>
+                    <Link className="nav-link mx-2" to={`/about`}>About Me</Link>
+                    <div className="mb-3 me-2 text-end">
+                      <Button className="btn-success themeL mx-1" onClick={() => themeLight()}><FaSun/></Button>
+                      <Button className="btn-success themeD mx-1" onClick={() => themeDark()}><FaMoon/></Button>
+                    </div>
+                </Nav>
+              </Container>
+            </Navbar>
           </div>
           <StyledApp className="mainBody">
+            <Route exact path="/">
+              <Intro/>
+            </Route>
+            <Route exact path="/intro">
+              <Intro/>
+            </Route>
             <Route exact path="/projects">
               <Main/>
+            </Route>
+            <Route exact path="/about">
+              <AboutMe/>
             </Route>
           </StyledApp>
         </ThemeProvider>
