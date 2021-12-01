@@ -1,49 +1,33 @@
-import React, { useState } from "react";
-import { useQuery } from "@apollo/client";
-import { Container, Button, Col, Row } from "react-bootstrap";
+import React from "react";
 
-import ProjectLoad from "../components/ProjectLoad";
+import { Row, Col } from "react-bootstrap";
 
-import { QUERY_PROJECT_ALL } from "../utils/queries";
+import About from "../components/About"
+import Intro from "../components/Intro"
+import Projects from "../components/Projects"
 
-function Home() {
-    const projects = useQuery(QUERY_PROJECT_ALL);
-
-    const [currentTab, setTab] = useState({
-        tabID: 0,
-    });
-
-    const changeTab = (event) => {
-        event.preventDefault();
-        setTab({...currentTab, tabID: event.target.getAttribute("name")});
-    }
-
-    if(projects.loading) return <p>Loading...</p>
-
+function Main() {
     return(
-        <Container>
-            <Row>
-                <Col xs={12} md={4} lg={3} className="me-2 mb-3">
-                    <div className="bg-green border-green p-2">
-                        <ul className="noDecor mt-2 px-2">
-                            {projects.data.projects.map((index) => (
-                                <li className="text-center mb-2" key={index._id}>
-                                    <Button variant={"success"} className="btn-block" name={index._id} onClick={changeTab}>
-                                        {index.title}
-                                    </Button>
-                                </li>
-                            ))}
-                        </ul>
-                    </div>
-                </Col>
-                <Col className="p-0">
-                    <Container className="mb-3">
-                        <ProjectLoad currentProjectId={currentTab.tabID}/>
-                    </Container>
-                </Col>
+        <div id="intro">
+            <Intro/>
+            
+            <Row className="genText mx-5 mb-5">
+                <Col className="ps-0 align-items-center"><hr/></Col>
+                <Col xs={4} md={3} xl={2} className="text-center font-questrial pt-1 px-0" id="projects">Sample Projects</Col>
+                <Col className="pe-0 align-items-center"><hr/></Col>
             </Row>
-        </Container>
-    )
+            
+            <Projects/>
+            
+            <Row className="genText mx-5 mb-5">
+                <Col className="ps-0 align-items-center"><hr/></Col>
+                <Col xs={4} md={2} xl={1} className="text-center font-questrial pt-1 px-0" id="about">About Me</Col>
+                <Col className="pe-0 align-items-center"><hr/></Col>
+            </Row>
+            
+            <About/>
+        </div>
+    );
 }
 
-export default Home;
+export default Main;
