@@ -9,6 +9,7 @@ const typeDefs = gql`
         thumbnail: String
         description: String
         status: String
+        tags: [String]
     }
 
     type Query {

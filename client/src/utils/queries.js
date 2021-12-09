@@ -10,6 +10,7 @@ export const QUERY_PROJECT_ALL = gql`
             thumbnail
             description
             status
+            tags
         }
     }
 `;
@@ -24,6 +25,7 @@ export const QUERY_PROJECT_ID = gql`
             thumbnail
             description
             status
+            tags
         }
     }
 `;

@@ -22,7 +22,12 @@ const projectSchema = new Schema({
     status: {
         type: String,
         required: false
-    }
+    },
+    tags: [
+        {
+            type: String
+        }
+    ]
 });
 
 const Project = model("Project", projectSchema);

@@ -105,10 +105,10 @@ export const GlobalStyles = createGlobalStyle`
         border-color: ${(props) => props.theme.btnInverse1};
     }
 
-    .btn-success-inverse:hover, .btn-success-inverse:active {
-        color: ${(props) => props.theme.fontColor};
-        background-color: ${(props) => props.theme.btnInverse2};
-        border-color: ${(props) => props.theme.btnInverse2};
+    .btn-success-inverse:hover, .btn-success-inverse:active, .btn-success-inverse-activated {
+        color: ${(props) => props.theme.fontColor}!important;
+        background-color: ${(props) => props.theme.btnInverse2}!important;
+        border-color: ${(props) => props.theme.btnInverse2}!important;
     }
 
     .card img {
