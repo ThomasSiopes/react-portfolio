@@ -1,8 +1,116 @@
 [
-    {"title": "1001 Nuggets", "repoURL": "https://github.com/ThomasSiopes/1001nuggets", "projectURL": "https://w1001nuggets.herokuapp.com/", "thumbnail": "1001nuggets.png", "description": "1001 Nuggets is a MERN app that stores quotes, authors, and topics in a large database. This app was made as a continuation of the Proverbial Wisdom project, as a sort of \"second, more professionally designed\" attempt at a similar idea.", "status": "WIP", "tags": ["Front-End", "Back-End", "Javascript", "React", "Node.js", "Mongoose"]},
-    {"title": "Proverbial Wisdom", "repoURL": "https://github.com/ThomasSiopes/sicophants", "projectURL": "https://proverbial-wisdom.herokuapp.com/", "thumbnail": "proverbial_wisdom.png", "description": "Proverbial Wisdom is a MERN app that functions as a database of proverbs from miscellanenous cultures. This app was made after completion of my UNH bootcamp course, as a test of my personal MERN skills.", "status": "Complete", "tags": ["Front-End", "Back-End", "Javascript", "React", "Node.js", "Mongoose"]},
-    {"title": "Monster Battle", "repoURL": "https://github.com/mosterBattle/monster-battle", "projectURL": "https://sheltered-savannah-62809.herokuapp.com/", "thumbnail": "monster_battle.png", "description": "Monster Battle was the final group project I had worked on during the UNH bootcamp; a browser based video game. It proved to be too ambitious for our time frame, but I'm still proud to show off the functional login system and other back-end features I had worked on.", "status": "Dropped", "tags": ["Back-End", "Javascript", "Node.js", "React", "Mongoose"]},
-    {"title": "TS 05: Event Planner", "repoURL": "https://github.com/ThomasSiopes/TS-05-Event-Planner", "projectURL": "https://thomassiopes.github.io/TS-05-Event-Planner/Develop/", "thumbnail": "event_planner.png", "description": "The Event Planner is an html-js-css hybrid project that allows the user to plan events throughout an 8 hour work day. This UNH project was intended as an assessment of one's skills with jquery, API fetching, and working with the \"Date\" datatype.", "status": "Complete", "tags": ["Front-End", "HTML", "Javascript", "JQuery"]},
-    {"title": "TS 06: Weather API Fetch", "repoURL": "https://github.com/ThomasSiopes/TS-06-Weather-API-Fetch", "projectURL": "https://thomassiopes.github.io/TS-06-Weather-API-Fetch/", "thumbnail": "weather_API.png", "description": "The Weather API fetch is an html-js-css hybrid project that asks for an input in the form of a major city name, and uses it to call a weather API to show a 5-day weather forecast of that area. This UNH project tests one's skills with API calls, user inputs, and one's aptitude with local storage (via the user input history).", "status": "Complete", "tags": ["Front-End", "HTML", "Javascript"]},
-    {"title": "Group Project: SWOSAAT", "repoURL": "https://github.com/Laura-Bullek/SWOSAAT", "projectURL": "https://evening-fortress-06751.herokuapp.com/", "thumbnail": "SWOSAAT.png", "description": "SWOSAAT is a group project I participated in during my time in the UNH fullstack bootcamp. It's an acronym that stands for \"Saving the World, One Subscription At A Time\". The academic goals of the app were to show our ability to program a Node.js app with SQL as its database, Express.js for routing, Handlebars.js for a stylistic engine, and a functional login system.", "status": "Complete", "tags": ["Front-End", "Back-End", "Javascript", "Node.js", "MySQL"]}
+    {
+        "title": "1001 Nuggets", 
+        "repoURL": "https://github.com/ThomasSiopes/1001nuggets", 
+        "projectURL": "https://w1001nuggets.herokuapp.com/", 
+        "thumbnail": "1001nuggets.png", 
+        "description": "1001 Nuggets is a MERN app that stores quotes, authors, and topics in a large database. This app was made as a continuation of the Proverbial Wisdom project, as a sort of \"second, more professionally designed\" attempt at a similar idea.", 
+        "status": "WIP", 
+        "tags": ["Front-End", "Back-End", "Javascript", "React", "Node.js", "Mongoose"]
+    },
+    {
+        "title": "Proverbial Wisdom", 
+        "repoURL": "https://github.com/ThomasSiopes/sicophants", 
+        "projectURL": "https://proverbial-wisdom.herokuapp.com/", 
+        "thumbnail": "proverbial_wisdom.png", 
+        "description": "Proverbial Wisdom is a MERN app that functions as a database of proverbs from miscellanenous cultures. This app was made after completion of my UNH bootcamp course, as a test of my personal MERN skills.", 
+        "status": "Complete", 
+        "tags": ["Front-End", "Back-End", "Javascript", "React", "Node.js", "Mongoose"]
+    },
+    {
+        "title": "Group Project: Monster Battle", 
+        "repoURL": "https://github.com/mosterBattle/monster-battle", 
+        "projectURL": "https://sheltered-savannah-62809.herokuapp.com/", 
+        "thumbnail": "monster_battle.png", 
+        "description": "Monster Battle was the final group project I had worked on during the UNH bootcamp; a browser based video game. It proved to be too ambitious for our time frame, but I'm still proud to show off the functional login system and other back-end features I had worked on.", 
+        "status": "Dropped", 
+        "tags": ["Back-End", "Javascript", "Node.js", "React", "Mongoose"]
+    },
+    {
+        "title": "Group Project: SWOSAAT", 
+        "repoURL": "https://github.com/Laura-Bullek/SWOSAAT", 
+        "projectURL": "https://evening-fortress-06751.herokuapp.com/", 
+        "thumbnail": "SWOSAAT.png", 
+        "description": "SWOSAAT is a group project I participated in during my time in the UNH fullstack bootcamp. It's an acronym that stands for \"Saving the World, One Subscription At A Time\". The academic goals of the app were to show our ability to program a Node.js app with SQL as its database, Express.js for routing, Handlebars.js for a stylistic engine, and a functional login system.", 
+        "status": "Complete", 
+        "tags": ["Front-End", "Back-End", "Javascript", "Node.js", "MySQL"]
+    },
+    {
+        "title": "TS 11: Note Taker",
+        "repoURL": "https://github.com/ThomasSiopes/TS-10-Note-Taker-App-MKII",
+        "thumbnail": "note_taker.png",
+        "description": "",
+        "status": "",
+        "tags": []
+    },
+    {
+        "title": "TS 10: Team Profile Generator",
+        "repoURL": "https://github.com/ThomasSiopes/TS-Team-Profile-Generator",
+        "thumbnail": "team_generator.png",
+        "description": "The Team Profile Generator is a console-based application that generates a basic HTML page for the user based on a series of prompts, detailing their production team based on the roles of \"manager\", \"engineer\", and \"intern\".",
+        "status": "Complete",
+        "tags": ["Node.js", "Javascript"]
+    },
+    {
+        "title": "TS 09: ReadMe Generator",
+        "repoURL": "https://github.com/ThomasSiopes/TS-ReadMe-Generator",
+        "thumbnail": "readMe_generator.png",
+        "description": "This project is a console-based readme generator, made to test my proficiency with the inquirer npm package, as well as serving as an introduction into Node.js based apps.",
+        "status": "Complete",
+        "tags": ["Node.js", "Javascript"]
+    },
+    {
+        "title": "Group Project: DareDEVils",
+        "repoURL": "https://github.com/UNH-Bootcamp-Projects/project-1-group-d",
+        "projectURL": "https://unh-bootcamp-projects.github.io/project-1-group-d/index.html",
+        "thumbnail": "dareDEVils.png",
+        "description": "DareDEVils is a group project from the UNH bootcamp. My job during this process was to handle the javascript; the project makes calls to APIs for a Marvel database and a movie database called OMDB, and displays the fetched information for the user.",
+        "status": "Complete",
+        "tags": ["Front-End", "Javascript"]
+    },
+    {
+        "title": "TS 06: Weather API Fetch", 
+        "repoURL": "https://github.com/ThomasSiopes/TS-06-Weather-API-Fetch", 
+        "projectURL": "https://thomassiopes.github.io/TS-06-Weather-API-Fetch/", 
+        "thumbnail": "weather_API.png", 
+        "description": "The Weather API fetch is an html-js-css hybrid project that asks for an input in the form of a major city name, and uses it to call a weather API to show a 5-day weather forecast of that area. This UNH project tests one's skills with API calls, user inputs, and one's aptitude with local storage (via the user input history).", 
+        "status": "Complete", 
+        "tags": ["Front-End", "HTML", "Javascript"]
+    },
+    {
+        "title": "TS 05: Event Planner", 
+        "repoURL": "https://github.com/ThomasSiopes/TS-05-Event-Planner", 
+        "projectURL": "https://thomassiopes.github.io/TS-05-Event-Planner/Develop/", 
+        "thumbnail": "event_planner.png", 
+        "description": "The Event Planner is an html-js-css hybrid project that allows the user to plan events throughout an 8 hour work day. This UNH project was intended as an assessment of one's skills with jquery, API fetching, and working with the \"Date\" datatype.", 
+        "status": "Complete", 
+        "tags": ["Front-End", "HTML", "Javascript", "JQuery"]
+    },
+    {
+        "title": "TS 04: Quiz Generator With Timer",
+        "repoURL": "https://github.com/ThomasSiopes/TS-04-Quiz-Generator-With-Timer",
+        "projectURL": "https://thomassiopes.github.io/TS-04-Quiz-Generator-With-Timer/",
+        "thumbnail": "quiz_generator.png",
+        "description": "The quiz generator is a simple assignment from the UNH bootcamp designed to test our aptitude with local storage. It also has a timer that counts down using setInterval.",
+        "status": "Complete",
+        "tags": ["Front-End", "HTML", "Javascript"]
+    },
+    {
+        "title": "TS 02: Advanced CSS Demo",
+        "repoURL": "https://github.com/ThomasSiopes/Homework-02-Advanced-CSS-Demo",
+        "projectURL": "https://thomassiopes.github.io/Homework-02-Advanced-CSS-Demo/",
+        "thumbnail": "advanced_css_demo.png",
+        "description": "An assignment from the UNH bootcamp, this project involved heavy CSS work to create a visually pleasing page without using any framework. This project served as a template for my original portfolio.",
+        "status": "Complete",
+        "tags": ["Front-End", "HTML", "CSS"]
+    },
+    {
+        "title": "TS 01: Code Refactor",
+        "repoURL": "https://github.com/ThomasSiopes/Homework-01-Code-Refactor",
+        "projectURL": "https://thomassiopes.github.io/Homework-01-Code-Refactor/",
+        "thumbnail": "code_refactor.png",
+        "description": "Code Refactor is the first assignment issued by the UNH bootcamp; it serves as a test of basic knowledge with HTML and CSS. The goal was to recreate a picture of a static HTML page using only semantic tags and CSS, no frameworks or javascript.",
+        "status": "Complete",
+        "tags": ["Front-End", "HTML", "CSS"]
+    }
 ]

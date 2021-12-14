@@ -17,7 +17,7 @@ const ProjectLoad = ({currentProjectId}) => {
         <Container id="loaded-project">
             <Card className="text-center border-green font-questrial">
                 {currentProject.thumbnail && <Card.Img src={`./assets/images/${currentProject.thumbnail}`} alt="Preview failed to load"/>}
-                <Card.Title className="mt-2">{currentProject.title}</Card.Title>
+                <Card.Title className="m-2">{currentProject.title}</Card.Title>
                 {currentProject.description && <Card.Body className="pt-1">{currentProject.description}</Card.Body>}
                 {currentProject.status && <Card.Body className="pt-1">Status: {currentProject.status}</Card.Body>}
                 <Card.Footer>

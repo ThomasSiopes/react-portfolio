@@ -17,7 +17,7 @@ const FilteredProject = (input) => {
     return(
         <Row>
             {filtered.map((i) => (
-                <Col xs={12} md={6} lg={4} className="mb-3" key={i._id}>
+                <Col xs={12} md={6} lg={4} xl={3} className="mb-3" key={i._id}>
                     <ProjectLoad currentProjectId={i._id}/>
                 </Col>
             ))}

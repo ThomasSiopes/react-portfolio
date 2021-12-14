@@ -50,9 +50,13 @@ function AllProjects() {
 
     const clearTags = () => {
         setFilter({...filter, tags: []});
-        let checks = document.getElementsByClassName("check-input");
-        for(let newIndex of checks) newIndex.checked = false;
-        console.log(checks);
+        let checks = document.getElementsByClassName("tag-button");
+        for(let newIndex of checks) {
+            console.log(newIndex);
+            newIndex.activeattribute = "false";
+            newIndex.classList.remove("btn-success-inverse-activated");
+            newIndex.classList.add("btn-success-inverse");
+        }
     }
 
     const updateTags = (event) => {
@@ -62,7 +66,7 @@ function AllProjects() {
     }
 
     return(
-        <Container className="mt-nav">
+        <Container className="mt-nav mx-auto">
             <div className="genText font-questrial text-center mb-3">
                 <h1>My Projects</h1>
                 <p>These are all my projects. More sample text has to go here.</p>
@@ -73,68 +77,32 @@ function AllProjects() {
                         Show All
                     </li>
                     <li className="m-1" onClick={updateTags}>
-                        <span className="btn btn-success-inverse rounded-pill" title="Front-End" activeattribute="false">Front-End</span>
+                        <span className="tag-button btn btn-success-inverse rounded-pill" title="Front-End" activeattribute="false">Front-End</span>
                     </li>
                     <li className="m-1" onClick={updateTags}>
-                        <span className="btn btn-success-inverse rounded-pill" title="Back-End" activeattribute="false">Back-End</span>
+                        <span className="tag-button btn btn-success-inverse rounded-pill" title="Back-End" activeattribute="false">Back-End</span>
                     </li>
                     <li className="m-1" onClick={updateTags}>
-                        <span className="btn btn-success-inverse rounded-pill" title="HTML" activeattribute="false">HTML</span>
+                        <span className="tag-button btn btn-success-inverse rounded-pill" title="HTML" activeattribute="false">HTML</span>
                     </li>
                     <li className="m-1" onClick={updateTags}>
-                        <span className="btn btn-success-inverse rounded-pill" title="Javascript" activeattribute="false">Javascript</span>
+                        <span className="tag-button btn btn-success-inverse rounded-pill" title="Javascript" activeattribute="false">Javascript</span>
                     </li>
                     <li className="m-1" onClick={updateTags}>
-                        <span className="btn btn-success-inverse rounded-pill" title="React" activeattribute="false">React</span>
+                        <span className="tag-button btn btn-success-inverse rounded-pill" title="React" activeattribute="false">React</span>
                     </li>
                     <li className="m-1" onClick={updateTags}>
-                        <span className="btn btn-success-inverse rounded-pill" title="JQuery" activeattribute="false">JQuery</span>
+                        <span className="tag-button btn btn-success-inverse rounded-pill" title="JQuery" activeattribute="false">JQuery</span>
                     </li>
                     <li className="m-1" onClick={updateTags}>
-                        <span className="btn btn-success-inverse rounded-pill" title="Node.js" activeattribute="false">Node.js</span>
+                        <span className="tag-button btn btn-success-inverse rounded-pill" title="Node.js" activeattribute="false">Node.js</span>
                     </li>
                     <li className="m-1" onClick={updateTags}>
-                        <span className="btn btn-success-inverse rounded-pill" title="MySQL" activeattribute="false">MySQL</span>
+                        <span className="tag-button btn btn-success-inverse rounded-pill" title="MySQL" activeattribute="false">MySQL</span>
                     </li>
                     <li className="m-1" onClick={updateTags}>
-                        <span className="btn btn-success-inverse rounded-pill" title="Mongoose" activeattribute="false">Mongoose</span>
+                        <span className="tag-button btn btn-success-inverse rounded-pill" title="Mongoose" activeattribute="false">Mongoose</span>
                     </li>
-                    {/* <li className="btn btn-success-inverse rounded-pill m-1">
-                        <span className="mx-1">Front-End</span>
-                        <input type="checkbox" className="check-input" onChange={updateTags} title="Front-End"/>
-                    </li>
-                    <li className="btn btn-success-inverse rounded-pill m-1">
-                        <span className="mx-1">Back-End</span>
-                        <input type="checkbox" className="check-input" onChange={updateTags} title="Back-End"/>
-                    </li>
-                    <li className="btn btn-success-inverse rounded-pill m-1">
-                        <span className="mx-1">HTML</span>
-                        <input type="checkbox" className="check-input" onChange={updateTags} title="HTML"/>
-                    </li>
-                    <li className="btn btn-success-inverse rounded-pill m-1">
-                        <span className="mx-1">Javascript</span>
-                        <input type="checkbox" className="check-input" onChange={updateTags} title="Javascript"/>
-                    </li>
-                    <li className="btn btn-success-inverse rounded-pill m-1">
-                        <span className="mx-1">React</span>
-                        <input type="checkbox" className="check-input" onChange={updateTags} title="React"/>
-                    </li>
-                    <li className="btn btn-success-inverse rounded-pill m-1">
-                        <span className="mx-1">JQuery</span>
-                        <input type="checkbox" className="check-input" onChange={updateTags} title="JQuery"/>
-                    </li>
-                    <li className="btn btn-success-inverse rounded-pill m-1">
-                        <span className="mx-1">Node.js</span>
-                        <input type="checkbox" className="check-input" onChange={updateTags} title="Node.js"/>
-                    </li>
-                    <li className="btn btn-success-inverse rounded-pill m-1">
-                        <span className="mx-1">MySQL</span>
-                        <input type="checkbox" className="check-input" onChange={updateTags} title="MySQL"/>
-                    </li>
-                    <li className="btn btn-success-inverse rounded-pill m-1">
-                        <span className="mx-1">Mongoose</span>
-                        <input type="checkbox" className="check-input" onChange={updateTags} title="Mongoose"/>
-                    </li> */}
                 </ul>
             </div>
             <FilteredProject projectList={allProjects} chosenTags={filter.tags}/>
