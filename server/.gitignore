@@ -5,6 +5,8 @@
 /.pnp
 .pnp.js
 /seeders
+./seeders
+/.seeders
 
 # testing
 /coverage
