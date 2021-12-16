@@ -27,6 +27,15 @@
         "tags": ["Back-End", "Javascript", "Node.js", "React", "Mongoose"]
     },
     {
+        "title": "TS: On-Offline Budget Tracker",
+        "repoURL": "https://github.com/ThomasSiopes/TS-On-Offline-Budget-Tracker",
+        "projectURL": "https://ts-on-offline-budget-tracker.herokuapp.com/",
+        "thumbnail": "on_offline_tracker.png",
+        "description": "The On-Offline Budget Tracker is a Node.js app that uses Mongoose and MongoDB to track a user-inputted series of financial transactions. It continues to track these transactions even if the user's internet disconnects while using the app, hence the name.",
+        "status": "Complete",
+        "tags": ["Front-End", "HTML", "Back-End", "CSS", "Javascript", "Node.js", "Mongoose"]
+    },
+    {
         "title": "Group Project: SWOSAAT", 
         "repoURL": "https://github.com/Laura-Bullek/SWOSAAT", 
         "projectURL": "https://evening-fortress-06751.herokuapp.com/", 
@@ -36,12 +45,29 @@
         "tags": ["Front-End", "Back-End", "Javascript", "Node.js", "MySQL"]
     },
     {
+        "title": "TS: Tech Blog",
+        "repoURL": "https://github.com/ThomasSiopes/TS-14-Tech-Blog",
+        "projectURL": "https://ts-tech-blog.herokuapp.com/",
+        "thumbnail": "tech_blog.png",
+        "description": "Tech Blog is a Node.js app that uses MySQL as a database. This app lets a user log in or sign up, adding their account to the database, and then lets them create tech projects that are only editable or deletable to the accounts that created them.",
+        "status": "Complete",
+        "tags": ["Front-End", "HTML", "CSS", "Javascript", "Back-End", "Node.js", "MySQL"]
+    },
+    {
+        "title": "TS 12: Console Employee Manager",
+        "repoURL": "https://github.com/ThomasSiopes/TS-Console-Employee-Manager",
+        "thumbnail": "console_employee_manager.png",
+        "description": "The Console Employee Manager is an early exercise in MySQL database handling; it's a console-based Node.js app that allows a user to build up a database of workers. This app relies on MySQL Workbench to work.",
+        "status": "Complete",
+        "tags": ["Back-End", "Javascript", "Node.js", "MySQL"]
+    },
+    {
         "title": "TS 11: Note Taker",
         "repoURL": "https://github.com/ThomasSiopes/TS-10-Note-Taker-App-MKII",
         "thumbnail": "note_taker.png",
-        "description": "",
-        "status": "",
-        "tags": []
+        "description": "Note Taker is an express app that allows a user to write and save notes in a rudimentary JSON database. This app served as an introduction to express and API routing in the UNH bootcamp.",
+        "status": "Marked for Repair",
+        "tags": ["Front-End", "Back-End", "Node.js", "HTML", "Javascript", "CSS"]
     },
     {
         "title": "TS 10: Team Profile Generator",

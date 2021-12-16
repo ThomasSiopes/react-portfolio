@@ -173,6 +173,10 @@ export const GlobalStyles = createGlobalStyle`
         color: ${(props) => props.theme.navColor2};
     }
 
+    .navbar-dark .navbar-nav .nav-link:focus {
+        color: ${(props) => props.theme.navColor2};
+    }
+
     .noDecor {
         text-decoration: none;
         list-style-type: none;

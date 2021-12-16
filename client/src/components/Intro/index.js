@@ -12,11 +12,8 @@ const Intro = () => {
                 </section>
                 <section>
                     <p>
-                        <a className="btn btn-success rounded-0 rounded-start ms-1 font-questrial" href="#projects">Sample Projects</a>
-                        <a className="btn btn-success rounded-0 rounded-end me-1 border-start font-questrial" href="#about">About Me</a>
-                    </p>
-                    <p>
-                        <Link className="btn btn-success mx-1 font-questrial" to={`/projects`}>All Projects</Link>
+                        <a className="btn btn-success rounded-0 rounded-start ms-1 font-questrial" href="#about">About Me</a>
+                        <Link className="btn btn-success rounded-0 rounded-end me-1 border-start font-questrial" to={`/projects`}>Projects</Link>
                     </p>
                 </section>
             </Container>

@@ -86,6 +86,9 @@ function AllProjects() {
                         <span className="tag-button btn btn-success-inverse rounded-pill" title="HTML" activeattribute="false">HTML</span>
                     </li>
                     <li className="m-1" onClick={updateTags}>
+                        <span className="tag-button btn btn-success-inverse rounded-pill" title="CSS" activeattribute="false">CSS</span>
+                    </li>
+                    <li className="m-1" onClick={updateTags}>
                         <span className="tag-button btn btn-success-inverse rounded-pill" title="Javascript" activeattribute="false">Javascript</span>
                     </li>
                     <li className="m-1" onClick={updateTags}>

@@ -7,8 +7,8 @@ const AboutMe = () => {
         <Container className="text-center d-flex component">
             <Container className="align-self-center">
                 <Row className="align-items-center">
-                    <Col>
-                        <Row className="rounded font-questrial genText">
+                    <Col xs={12} md={7}>
+                        <Row className="rounded font-questrial genText align-items-center">
                             <Col xs={12} lg={4} className="mb-2">
                                 <Container className="py-4 bg-green border-green">
                                     <p className="text-center"><strong>Front-End</strong></p>
