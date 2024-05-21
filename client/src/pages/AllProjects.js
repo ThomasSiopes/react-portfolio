@@ -61,7 +61,7 @@ function AllProjects() {
 
     const updateTags = (event) => {
         console.log(event.target.activeattribute);
-        if(event.target.activeattribute == "false" || event.target.activeattribute == undefined) addTags(event);
+        if(event.target.activeattribute === "false" || event.target.activeattribute === undefined) addTags(event);
         else removeTags(event);
     }
 
@@ -69,7 +69,6 @@ function AllProjects() {
         <Container className="mt-nav mx-auto">
             <div className="genText font-questrial text-center mb-3">
                 <h1>My Projects</h1>
-                <p>These are all my projects. More sample text has to go here.</p>
             </div>
             <div>
                 <ul id="filters" className="font-questrial text-center px-1">

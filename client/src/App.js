@@ -1,12 +1,12 @@
 import React, { useState } from "react";
 import { ApolloClient, InMemoryCache, ApolloProvider, createHttpLink } from "@apollo/client";
 import { setContext } from "@apollo/client/link/context";
-import { Link, Redirect } from "react-router-dom";
-import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import { Link } from "react-router-dom";
+import { BrowserRouter as Router, Route } from "react-router-dom";
 
 // Styles
 import 'bootstrap/dist/css/bootstrap.min.css';
-import { Container, Button, Navbar, Nav, Row, Col } from "react-bootstrap";
+import { Container, Button, Navbar, Nav, } from "react-bootstrap";
 import { FaMoon, FaSun, FaGithub, FaLinkedinIn } from "react-icons/fa";
 import styled, { ThemeProvider } from "styled-components";
 import { lightTheme, darkTheme, GlobalStyles } from "./themes";

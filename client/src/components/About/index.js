@@ -1,5 +1,5 @@
 import React from "react";
-import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom";
 import { Container, Row, Col } from "react-bootstrap";
 
 const AboutMe = () => {
@@ -20,6 +20,7 @@ const AboutMe = () => {
                                         <li>JQuery</li>
                                         <li>Handlebars</li>
                                         <li>Bootstrap and similar frameworks</li>
+                                        <li>PHP</li>
                                     </ul>
                                 </Container>
                             </Col>
@@ -41,13 +42,15 @@ const AboutMe = () => {
                                         <li>Heroku</li>
                                         <li>Visual Studio Code</li>
                                         <li>Brackets</li>
+                                        <li>MySQL Workbench</li>
+                                        <li>XAMPP</li>
                                     </ul>
                                 </Container>
                             </Col>
                         </Row>
                     </Col>
                     <Col>
-                        <img src="/assets/images/proverbial_wisdom.png"/>
+                        <img src="/assets/images/proverbial_wisdom.png" alt="Profile for me"/>
                         <p className="genText">Filler. Preferably an image of me.</p>
                     </Col>
                 </Row>
